@@ -1,0 +1,23 @@
+🚀 How to Run
+Clone this repository or download the FRAP.R file to your local machine.
+
+Open your R console or RStudio.
+
+Run the application using the following command:
+
+R
+library(shiny)
+runApp("path/to/directory/containing/FRAP.R")
+📄 Input Data Format
+The application expects tabular data (preferably .csv) with the following column structure. The app utilizes intelligent column detection, so exact naming is flexible, but the following keywords are recommended:
+
+Time (e.g., Time, Frame, t)
+
+ROI Intensity (e.g., ROI, Intensity, Bleach, Signal)
+
+Background Intensity (e.g., Background, bg, bkg)
+
+Reference Intensity (e.g., Reference, ref). Note: If no reference column is found, the app will default to a constant value of 100.
+
+👨‍💻 Author
+Muralidharan Mani
